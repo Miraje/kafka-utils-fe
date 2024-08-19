@@ -4,7 +4,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -21,12 +20,34 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "models/*": [
+        "./src/app/models/*",
+        "./src/app/models/client/*",
+      ],
+      "pipes/*": [
+        "./src/app/pipes/*",
+      ],
+      "services/*": [
+        "./src/app/services/*"
+      ],
+      "shared/*": [
+        "./src/app/shared/*"
+      ],
+      "components/*": [
+        "./src/app/components/*"
+      ],
+      "utils/*": [
+        "./src/app/utils/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "useDefineForClassField": false
   }
 }

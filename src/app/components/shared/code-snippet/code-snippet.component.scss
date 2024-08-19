@@ -1,0 +1,38 @@
+.code-wrap {
+  white-space: pre-wrap;
+}
+
+pre {
+  display: grid;
+  margin: 0;
+}
+
+/*
+https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/
+#editing {
+  margin-top: 40px;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1;
+  line-height: 24px;
+  font-family: monospace, monospace;
+  font-size: 16px;
+  color: transparent;
+  background: transparent;
+  caret-color: black; !* Or choose your favorite color *!
+  overflow: auto;
+  white-space: nowrap; !* Allows textarea to scroll horizontally *!
+  letter-spacing: 0.031rem;
+}
+
+#highlighting {
+  z-index: 0;
+}
+
+#editing,
+#highlighting {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+*/
